@@ -117,7 +117,38 @@ footer {
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
+/* Banner slide button */
+.prev-button,.next-button {
+  position: absolute;
+  top:50%;
+  border-radius: 10px;
+  transform: translateY(-50%);
+  font-size: 25px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.443);
+  border: none;
+  color: white;
+}
 
+.prev-button {
+  left: 15px;
+}
+
+.next-button {
+  right: 15px;
+}
+
+
+
+.slide-caption {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  margin: 0;
+  color: white;
+  font-size: 14px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
 
 
 /* Screen size */
@@ -133,6 +164,23 @@ footer {
     height: 300px;
   }
     .banner-text h2 {
-    font-size: 20px;
+    font-size: 23px;
   }
+  .banner-text p {
+      font-size: 13px;
+  }
+  .banner-button {
+      font-size: 13px;
+  }
+
+    .prev-button,
+  .next-button {
+    font-size: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.443);
+  border: none;
+  color: white;
+    top: 70%;
+  }
+
 }
