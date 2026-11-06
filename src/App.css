@@ -1,7 +1,7 @@
 /* main colour and font variables */
 :root {
-  --primary: #0b4f6c; /* --variableName defines a variable, so it can be reused*/
-  --accent: #f2a541;
+  --primary: #0b6c12a4; /* --variableName defines a variable, so it can be reused*/
+  --accent: #f28541;
   --background: white;
   --text: #333;
   --font: Arial, sans-serif;
@@ -74,7 +74,6 @@ footer {
   padding: 5px;
 }
 
-
 /* Home banner */
 .banner {
   position: relative;
@@ -109,7 +108,7 @@ footer {
   color: white;
   font-size: 36px;
   margin: 0 0 10px;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
 .banner-button {
@@ -118,9 +117,10 @@ footer {
 }
 
 /* Banner slide button */
-.prev-button,.next-button {
+.prev-button,
+.next-button {
   position: absolute;
-  top:50%;
+  top: 50%;
   border-radius: 10px;
   transform: translateY(-50%);
   font-size: 25px;
@@ -138,8 +138,6 @@ footer {
   right: 15px;
 }
 
-
-
 .slide-caption {
   position: absolute;
   bottom: 10px;
@@ -150,6 +148,48 @@ footer {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
+/* For Packages */
+.package-list {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.package-card {
+  background-color: white;
+  border: 1px solid #8585858f;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.package-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.package-info {
+  padding: 10px 15px;
+}
+
+.package-info h3 {
+  margin: 5px 0;
+}
+
+.package-category {
+  margin: 0;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.package-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary);
+}
 
 /* Screen size */
 /* for mobile view */
@@ -163,24 +203,27 @@ footer {
   .banner img {
     height: 300px;
   }
-    .banner-text h2 {
+  .banner-text h2 {
     font-size: 23px;
   }
   .banner-text p {
-      font-size: 13px;
+    font-size: 13px;
   }
   .banner-button {
-      font-size: 13px;
+    font-size: 13px;
   }
 
-    .prev-button,
+  .prev-button,
   .next-button {
     font-size: 10px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.443);
-  border: none;
-  color: white;
+    padding: 10px;
+
+    border: none;
+
     top: 70%;
   }
 
+  .package-list {
+    grid-template-columns: 1fr;
+  }
 }

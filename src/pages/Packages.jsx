@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import PackageCard from "../component/PackageCard";
 
 function Packages() {
   // packages = stores the package data from JSON file
@@ -16,14 +17,21 @@ function Packages() {
     <div className="container">
       <h2>Our Travel Packages</h2>
 
-      {packages.map((pkg) => (
-        <div key={pkg.id}>
-          <h3>{pkg.destination}</h3>
-          <p>Category: {pkg.category}</p>
-          <p>Duration: {pkg.duration}</p>
-          <p>Price: RM {pkg.price}</p>
+        <div className="package-list">
+            {packages.map((pkg) => (
+                <PackageCard
+                key={pkg.id}
+                image={pkg.image}
+                destination={pkg.destination}
+                state={pkg.state}
+                category={pkg.category}
+                description={pkg.description}
+                duration={pkg.duration}
+                price={pkg.price}
+                />
+            ))}
         </div>
-      ))}
+
     </div>
   );
 }
