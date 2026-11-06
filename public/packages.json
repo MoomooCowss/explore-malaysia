@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "destination": "Langkawi",
+    "state": "Kedah",
+    "category": "Island",
+    "duration": "3D2N",
+    "price": 899,
+    "image": "/images/langkawi.jpg",
+    "description": "Island hopping, cable car rides and white sandy beaches."
+  },
+  {
+    "id": 2,
+    "destination": "Ipoh",
+    "state": "Perak",
+    "category": "Culture",
+    "duration": "2D1N",
+    "price": 499,
+    "image": "/images/ipoh.jpg",
+    "description": "Explore limestone cave temples, old town murals and famous Ipoh white coffee."
+  },
+  {
+    "id": 3,
+    "destination": "Penang",
+    "state": "Penang",
+    "category": "Culture",
+    "duration": "4D3N",
+    "price": 1099,
+    "image": "/images/penang.jpg",
+    "description": "Walk George Town's UNESCO heritage streets, find street art and enjoy hawker food."
+  },
+  {
+    "id": 4,
+    "destination": "Kuala Lumpur",
+    "state": "Federal Territory",
+    "category": "City",
+    "duration": "3D2N",
+    "price": 699,
+    "image": "/images/kl.jpg",
+    "description": "See the Petronas Twin Towers, climb to Batu Caves and shop in Bukit Bintang."
+  },
+  {
+    "id": 5,
+    "destination": "Kuching",
+    "state": "Sarawak",
+    "category": "Nature",
+    "duration": "3D2N",
+    "price": 899,
+    "image": "/images/kuching.jpg",
+    "description": "Meet orangutans at Semenggoh, hike Bako National Park and stroll the waterfront."
+  },
+  {
+    "id": 6,
+    "destination": "Cameron Highlands",
+    "state": "Pahang",
+    "category": "Highlands",
+    "duration": "3D2N",
+    "price": 599,
+    "image": "/images/cameron.jpg",
+    "description": "Visit tea plantations, strawberry farms and the Mossy Forest in cool highland air."
+  },
+  {
+    "id": 7,
+    "destination": "Perhentian Islands",
+    "state": "Terengganu",
+    "category": "Island",
+    "duration": "4D3N",
+    "price": 1199,
+    "image": "/images/perhentian.jpg",
+    "description": "Snorkel with sea turtles in clear water and relax on quiet island beaches."
+  },
+  {
+    "id": 8,
+    "destination": "Mount Kinabalu",
+    "state": "Sabah",
+    "category": "Adventure",
+    "duration": "3D2N",
+    "price": 1599,
+    "image": "/images/kinabalu.jpg",
+    "description": "Climb Malaysia's highest mountain with experienced guides and watch the sunrise from the summit."
+  }
+]
