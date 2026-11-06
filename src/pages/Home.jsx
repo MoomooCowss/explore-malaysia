@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // list of the slides for the banners
 const slides = [
@@ -36,6 +36,7 @@ function Home() {
     }
   }
 
+    //   go to previous slide
   function prevSlide() {
     if (current === 0) {
       setCurrent(slides.length - 1);
@@ -44,7 +45,15 @@ function Home() {
     }
   }
 
-  //   go to previous slide
+//   to make the slide move itself
+useEffect(() => {
+    const timer = setTimeout(() => {
+        setCurrent(current === slides.length -1 ? 0 : current +1);
+
+    },4000);
+// stop old timer when slide changed
+return () => clearTimeout(timer);
+}, [current]);
 
   return (
     <div>
