@@ -202,6 +202,29 @@ footer {
   font-weight: bold;
 }
 
+/* Search, filter and sort */
+.package-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.package-filter input,
+.package-filter select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.package-filter input {
+  width: 250px;
+}
+
+
+
 
 /* Screen size */
 /* for mobile view */
@@ -238,4 +261,11 @@ footer {
   .package-list {
     grid-template-columns: 1fr;
   }
+
+    .package-filter input,
+  .package-filter select {
+    width: 30%;
+    display: flex;
+  }
+
 }
