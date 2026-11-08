@@ -61,7 +61,7 @@ function Home() {
 
   // fetch packages once, and keep featured ones
   useEffect(() => {
-    fetch("packages.json")
+    fetch("/packages.json")
       .then((response) => response.json())
       .then((data) => setFeatured(data.filter((pkg) => pkg.featured)))
     //   prevents crash if fail to fetch package section
