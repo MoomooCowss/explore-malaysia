@@ -1,10 +1,11 @@
 /* main colour and font variables */
 :root {
-  --primary: #31c43a; /* --variableName defines a variable, so it can be reused*/
-  --accent: #f28541;
-  --background: white;
+  --primary: #1f4d3a; /* --variableName defines a variable, so it can be reused*/
+  --accent: #c8a165;
+  --background: #f7f5f0;
   --text: #333;
   --font: Arial, sans-serif;
+  --heading-font: "Playfair Display", serif;
 }
 
 /* general style, targets every element on page */
@@ -40,12 +41,47 @@ header h1 {
 }
 
 /* nav bar */
+nav {
+  border-top: 1px solid var(--accent);
+  padding-top: 10px;
+  display: inline-block;
+}
+
+/* logo and site name side by side */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+
+}
+.logo h1 {
+  margin: 0;
+  font-family: var(--heading-font);
+  letter-spacing: 1px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+
 /* "a" for the Link component */
 nav a {
   color: white;
   text-decoration: none;
   margin: 0 15px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 nav a:hover {
@@ -161,6 +197,16 @@ footer {
   border-radius: 8px;
   overflow: hidden;
   text-align: left;
+  /* adds shadow to the card box */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  /* adjusting the lifting speed of card hover */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* card slightly lifts up when hovered */
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .package-card img {
@@ -284,5 +330,6 @@ footer {
     width: 30%;
     display: flex;
   }
+
 
 }

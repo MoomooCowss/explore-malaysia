@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none" stroke="#c8a165" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <title>Explore Malaysia logo</title>
+  <circle cx="60" cy="60" r="54"/>
+  <ellipse cx="60" cy="40" rx="11" ry="19"/>
+  <ellipse cx="60" cy="40" rx="11" ry="19" transform="rotate(72 60 60)"/>
+  <ellipse cx="60" cy="40" rx="11" ry="19" transform="rotate(144 60 60)"/>
+  <ellipse cx="60" cy="40" rx="11" ry="19" transform="rotate(216 60 60)"/>
+  <ellipse cx="60" cy="40" rx="11" ry="19" transform="rotate(288 60 60)"/>
+  <path d="M60 60q8-10 16-24"/>
+  <circle cx="78" cy="33" r="3"/>
+</svg>
