@@ -12,7 +12,7 @@ function App(){
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/packages" element={<Packages/>}></Route>
-          {/* throw in your about and contact page here */}
+          {/* REMOVE COMMENT WHEN ALL DONE. throw in your about and contact page here */}
         </Routes>
       </main>
     <Footer />
