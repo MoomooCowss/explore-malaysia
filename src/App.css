@@ -1,6 +1,6 @@
 /* main colour and font variables */
 :root {
-  --primary: #0b6c12a4; /* --variableName defines a variable, so it can be reused*/
+  --primary: #31c43a; /* --variableName defines a variable, so it can be reused*/
   --accent: #f28541;
   --background: white;
   --text: #333;
@@ -223,6 +223,23 @@ footer {
   width: 250px;
 }
 
+/* View all package button */
+.view-all {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.view-all:hover {
+  background-color:#27a42f ;
+  color: var(--text);
+}
 
 
 

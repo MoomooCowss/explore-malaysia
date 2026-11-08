@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import PackageCard from "../component/PackageCard";
 
 // list of the slides for the banners
 const slides = [
@@ -36,7 +37,7 @@ function Home() {
     }
   }
 
-    //   go to previous slide
+  //   go to previous slide
   function prevSlide() {
     if (current === 0) {
       setCurrent(slides.length - 1);
@@ -45,18 +46,32 @@ function Home() {
     }
   }
 
-//   to make the slide move itself
-useEffect(() => {
+  //   to make the slide move itself
+  useEffect(() => {
     const timer = setTimeout(() => {
-        setCurrent(current === slides.length -1 ? 0 : current +1);
+      setCurrent(current === slides.length - 1 ? 0 : current + 1);
+    }, 4000);
+    // stop old timer when slide changed
+    return () => clearTimeout(timer);
+  }, [current]);
 
-    },4000);
-// stop old timer when slide changed
-return () => clearTimeout(timer);
-}, [current]);
+  //   new feature. Featured package on homepage
+  // featured = packages marked featured in JSON file
+  const [featured, setFeatured] = useState([]);
 
+  // fetch packages once, and keep featured ones
+  useEffect(() => {
+    fetch("packages.json")
+      .then((response) => response.json())
+      .then((data) => setFeatured(data.filter((pkg) => pkg.featured)))
+    //   prevents crash if fail to fetch package section
+      .catch(() => setFeatured([]));
+  }, []);
+
+  //   main return
   return (
     <div>
+      {/* banner section */}
       <div className="banner">
         <img src={slides[current].image} alt={slides[current].alt} />
         <div className="banner-text">
@@ -77,6 +92,26 @@ return () => clearTimeout(timer);
         </button>
         {/* &#10094; and &#10095; creates the arrow symbol */}
         <p className="slide-caption">{slides[current].name}</p>
+      </div>
+
+      {/* featured packages section */}
+      <div className="container">
+        <h2>Featured Packages</h2>
+        <div className="package-list">
+          {featured.map((pkg) => (
+            <PackageCard
+              key={pkg.id}
+              image={pkg.image}
+              destination={pkg.destination}
+              state={pkg.state}
+              category={pkg.category}
+              description={pkg.description}
+              duration={pkg.duration}
+              price={pkg.price}
+            />
+          ))}
+        </div>
+        <Link to="/packages" className="view-all">View All Packages</Link>
       </div>
     </div>
   );

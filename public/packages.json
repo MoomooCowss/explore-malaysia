@@ -7,7 +7,8 @@
     "duration": "3D2N",
     "price": 899,
     "image": "/images/langkawi.jpg",
-    "description": "Island hopping, cable car rides and white sandy beaches."
+    "description": "Island hopping, cable car rides and white sandy beaches.",
+    "featured": true
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "duration": "2D1N",
     "price": 499,
     "image": "/images/ipoh.jpg",
-    "description": "Explore limestone cave temples, old town murals and famous Ipoh white coffee."
+    "description": "Explore limestone cave temples, old town murals and famous Ipoh white coffee.",
+    "featured": true
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "duration": "4D3N",
     "price": 1099,
     "image": "/images/penang.jpg",
-    "description": "Walk George Town's UNESCO heritage streets, find street art and enjoy hawker food."
+    "description": "Walk George Town's UNESCO heritage streets, find street art and enjoy hawker food.",
+    "featured": true
   },
   {
     "id": 4,
