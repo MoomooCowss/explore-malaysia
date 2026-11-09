@@ -15,6 +15,7 @@ function App(){
           <Route path="/packages" element={<Packages/>}></Route>
           <Route path="/about" element={<About/>}></Route>
           {/* REMOVE COMMENT WHEN ALL DONE. throw in your about and contact page here */}
+          <Route path="/about" element={<About/>}></Route>
         </Routes>
       </main>
     <Footer />
