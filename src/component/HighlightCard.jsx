@@ -4,7 +4,7 @@
 function HighlightCard(props) {
   return (
     <div className="highlight-card">
-      <span className="highlight-icon" aria-hidden="true">{props.icon}</span>
+      <img className="highlight-icon" src={props.icon} alt="" />
       <h3>{props.title}</h3>
       <p>{props.description}</p>
     </div>
