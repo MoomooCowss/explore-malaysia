@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Home from './pages/Home';
 import Packages from "./pages/Packages";
+import Contact from "./pages/Contact";
 
 function App(){
   return (
@@ -12,7 +13,7 @@ function App(){
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/packages" element={<Packages/>}></Route>
-          {/* REMOVE COMMENT WHEN ALL DONE. throw in your about and contact page here */}
+          <Route path="/contact" element={<Contact/>}></Route>
         </Routes>
       </main>
     <Footer />
