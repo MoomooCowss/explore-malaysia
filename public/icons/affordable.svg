@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke="#1f4d3a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M6 24V8a2 2 0 0 1 2-2h16l18 18-18 18L6 24z" fill="#c8a165" fill-opacity="0.25"/>
+  <circle cx="15" cy="15" r="3" fill="#c8a165"/>
+  <text x="24" y="24" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1f4d3a" stroke="none" text-anchor="middle" dominant-baseline="central" transform="rotate(45 24 24)">RM</text>
+</svg>

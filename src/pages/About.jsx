@@ -1,32 +1,31 @@
-<<<<<<< HEAD
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import HighlightCard from "../component/HighlightCard";
-import FaqItem from "../component/FAQitem";
+import FaqItem from "../component/Faqitem";
 
 // list of highlights, each one is shown as a HighlightCard
 const highlights = [
   {
     id: 1,
-    icon: "💰",
+    icon: "/icons/affordable.svg",
     title: "Affordable Travel Packages",
     description: "Clear prices for every budget, with no hidden charges.",
   },
   {
     id: 2,
-    icon: "🧭",
+    icon: "/icons/guide.svg",
     title: "Experienced Tour Guides",
     description: "Friendly local guides who know the stories behind each place.",
   },
   {
     id: 3,
-    icon: "🏝️",
+    icon: "/icons/destination.svg",
     title: "Local Destinations",
     description: "Islands, highlands and cities from Peninsular Malaysia to Borneo.",
   },
   {
     id: 4,
-    icon: "🛏️",
+    icon: "/icons/comfort.svg",
     title: "Comfortable Arrangements",
     description: "Hand-picked stays and smooth transport so you can relax.",
   },
@@ -121,6 +120,3 @@ function About() {
   );
 }
 export default About;
-=======
-
->>>>>>> 0880114e2308b825628135bdfc413d39e6f345cd
