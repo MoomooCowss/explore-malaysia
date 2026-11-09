@@ -287,7 +287,68 @@ footer {
   color: var(--text);
 }
 
+/* For Contact */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 20px auto 0;
+  text-align: left;
+}
 
+.contact-form label {
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: var(--font);
+}
+
+/* red border and light red background when a field has an error */
+.contact-form .input-error {
+  border-color: #c62828;
+  background-color: #fff5f5;
+}
+
+.contact-form .error {
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: var(--accent);
+  color: var(--text);
+}
+
+/* green confirmation box after a successful submit */
+.success {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e6f4ea;
+  color: #1e7a34;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
 
 /* Screen size */
 /* for mobile view */

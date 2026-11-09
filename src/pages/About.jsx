@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import HighlightCard from "../component/HighlightCard";
@@ -120,3 +121,6 @@ function About() {
   );
 }
 export default About;
+=======
+
+>>>>>>> 0880114e2308b825628135bdfc413d39e6f345cd
