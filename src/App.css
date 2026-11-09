@@ -287,39 +287,6 @@ footer {
   color: var(--text);
 }
 
-/* For About */
-.about-intro {
-  /* keeps the paragraph narrow and centered so it's easier to read */
-  max-width: 650px;
-  margin: 0 auto 30px;
-}
-
-.about-list {
-  display: grid;
-  /* as many cards per row as fit, each at least 220px wide */
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.about-card {
-  background-color: white;
-  border: 1px solid #8585858f;
-  /* gold stripe on top of the card */
-  border-top: 4px solid var(--accent);
-  border-radius: 8px;
-  padding: 20px;
-  text-align: left;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.about-card h3 {
-  margin: 0 0 8px;
-  color: var(--primary);
-}
-
-.about-card p {
-  margin: 0;
-}
 
 /* Screen size */
 /* for mobile view */
