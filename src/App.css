@@ -505,4 +505,42 @@ footer {
     height: 220px;
   }
 
+.highlight-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.highlight-card {
+  padding: 12px 10px;
+}
+  .highlight-card h3 {
+    font-size: 16px;
+  }
+    .highlight-card p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+.faq-question {
+  width: 100%;
+  padding: 10px 12px;
+  font-family: var(--font);
+  font-size: 14px;
+
+}
+
+
+.faq-arrow {
+  font-size: 18px;
+  color: var(--accent);
+}
+
+.faq-answer {
+  margin: 0;
+  padding: 4px 12px 10px;
+  border-top: solid 1px var(--accent);
+  color: #555;
+  font-size: 14px;
+}
+
 }
