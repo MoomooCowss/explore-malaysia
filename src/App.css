@@ -303,7 +303,8 @@ footer {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
