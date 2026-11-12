@@ -107,10 +107,10 @@ p {
 
 /* Footer */
 footer {
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.502);
   color: white;
   text-align: center;
-  padding: 5px;
+  padding: 0.5px;
     position: sticky;
   bottom: 0;       /* stays at the bottom of the screen */
   z-index: 1000;
