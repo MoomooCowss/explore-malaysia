@@ -30,6 +30,9 @@ main {
   flex: 1;
 }
 header {
+  position:sticky;
+  top: 0;
+  z-index: 1000;
   background-color: var(--primary);
   color: white;
   padding: 20px;
@@ -108,6 +111,9 @@ footer {
   color: white;
   text-align: center;
   padding: 5px;
+    position: sticky;
+  bottom: 0;       /* stays at the bottom of the screen */
+  z-index: 1000;
 }
 
 /* Home banner */
